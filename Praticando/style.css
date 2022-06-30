@@ -3,22 +3,27 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
-    --fonte-principal: 'inter';
+    --fonte-principal: 'Inter';
 }
 *{
     margin: 0;
     padding:0;
 }
 .siteConteudo{
-    color: var(--cor-de-fundo);
+    background-color: var(--cor-de-fundo);
+    color: var(--brancoprincipal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
-.cabecalho{
+.cabecalho__conteudo{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25% 25% 25%;
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+    align-items: center;
 }
 .cabecalho__banner{
     background-image: url(../Praticando/img/Background.png);
@@ -30,7 +35,7 @@
 .cabecalho__titulo{
     color: var(--brancoprincipal);
     text-align: center;
-    margin: 7rem 1.5rem;
+    margin-top: 7rem;
     line-height: 33.89px;
     grid-column: 1 / 1;
     grid-row: 1/2; 
@@ -40,7 +45,11 @@
     grid-column: 1/1;
     grid-row: 2/2;
     justify-self: center;
-    margin: 2rem 10px;
+    margin: 1em 0 2em 0;
+}
+
+.cabecalho__botao{
+    text-align: center;
 }
 
 .cabecalho__banner{
@@ -79,4 +88,75 @@
     font-size: 12px;
     color: var(--cinza-secundario);
     text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 10em 10em;
+}
+
+.secundario__imagem{
+    width: 50%;
+}
+
+.secundario{
+    align-items: center;
+}
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--brancoprincipal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__subtitulo{
+    color: var(--cinza-secundario);
+}
+
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos{
+    text-align: center;
+    display:grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.dispositivos__titulo{
+    grid-column: 1 / span 3;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 20px 0px;
+}
+
+.dispositivos__imagem:nth-child(1){
+    grid-column: 1;
+}
+.dispositivos__subtitulo:nth-child(1){
+    grid-column: 1;
+}
+
+.dispositivos__imagem:nth-child(2){
+    grid-column: 2;
+}
+
+.dispositivos__subtitulo:nth-child(2){
+    grid-column: 2;
+}
+
+.dispositivos__imagem:nth-child(3){
+    grid-column: 3;
+}
+
+.dispositivos__subtitulo:nth-child(3){
+    grid-column: 3;
 }
