@@ -1,9 +1,6 @@
-Olá Professora Mônica!
+Projeto do Aluraplus
 
-Agradeço desde já a sua ajuda com relação a esta minha dificuldade.
+Este projeto foi disponibilizado para os alunos do Alura (eu sou um deles).
 
-Bom, inserir a informação do display: grid no elemento Pai (que eu acho que é a section que criei para os botões).
+Curso de HTML e CSS: Praticando HTML/CSS.
 
-Acho que isso se resolveria com o grid-template-area, porém eu entendi o conceito, mas não sei direito como aplicar.
-
-Bom, novamente, agradeço muito a sua ajuda.
